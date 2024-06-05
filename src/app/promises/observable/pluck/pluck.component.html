@@ -1,0 +1,36 @@
+<h1 class="m-5">Pluck works!</h1>
+<div class="row m-5">
+  <div class="col-4">
+    <strong>Ex :1</strong>
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        <h6><strong>Pluck : by property</strong></h6>
+      </div>
+    </div>
+    <p class="fw-bold ps-3 mt-4">Name</p>
+    <hr>
+    <div class="ps-3 me-5">
+      <ul class="list-unstyled " *ngFor="let item of data">
+        <li>{{item}}</li>
+        <hr>
+      </ul>
+    </div>
+  </div>
+  <div class="col-4">
+    <strong>Ex :1</strong>
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        <h6><strong>Pluck : by nested  property</strong></h6>
+      </div>
+    </div>
+    <p class="fw-bold ps-3 mt-4">job > title</p>
+    <hr>
+    <div class="ps-3 me-5">
+      <ul class="list-unstyled " *ngFor="let item of data2">
+        <li>{{item}}</li>
+        <hr>
+      </ul>
+    </div>
+  </div>
+
+</div>
