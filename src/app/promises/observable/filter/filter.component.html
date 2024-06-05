@@ -1,2 +1,68 @@
 <h1 class="m-5">Filter works!</h1>
-jeel
+<div class="row m-5">
+  <div class="col-4">
+    <strong>Ex :1</strong>
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        <h6><strong>Filter :</strong> Name by length</h6>
+      </div>
+    </div>
+    <table class="m-3">
+      <thead                                                                   >
+        <th class="p-3 pe-4">Id</th>
+        <th class="p-3 pe-4">Name</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of ex1">
+          <td class="p-3 pe-4">{{item.id}}</td>
+          <td class="p-3 pe-4">{{item.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-4">
+    <strong>Ex :2</strong>
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        <h6><strong>Filter : </strong>by Gender</h6>
+      </div>
+    </div>
+    <table class="m-3">
+      <thead>
+        <th class="p-3 pe-4">Id</th>
+        <th class="p-3 pe-4">Name</th>
+        <th class="p-3 pe-4">Gender</th>
+      </thead>
+      <tbody >
+        <tr *ngFor="let item of ex1" >
+          <td class="p-3 pe-4">{{item.id}}</td>
+          <td class="p-3 pe-4">{{item.name}}</td>
+          <td class="p-3 pe-4">{{item.gender}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="col-4">
+    <strong>Ex :3</strong>
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        <h6><strong>Filter :</strong> Item by length</h6>
+      </div>
+    </div>
+    <table class="m-3">
+      <thead>
+        <th class="p-3 pe-4">Id</th>
+        <th class="p-3 pe-4">Name</th>
+        <th class="p-3 pe-4">Gender</th>
+      </thead>
+      <tbody >
+        <tr *ngFor="let item of ex3" >
+          <td class="p-3 pe-4">{{item.id}}</td>
+          <td class="p-3 pe-4">{{item.name}}</td>
+          <td class="p-3 pe-4">{{item.gender}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

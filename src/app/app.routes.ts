@@ -11,6 +11,7 @@ import { CustomObservableComponent } from './promises/observable/custom-observab
 import { MapComponent } from './promises/observable/map/map.component';
 import { PluckComponent } from './promises/observable/pluck/pluck.component';
 import { FilterComponent } from './promises/observable/filter/filter.component';
+import { TapComponent } from './promises/observable/tap/tap.component';
 
 export const routes: Routes = [
   {
@@ -56,6 +57,10 @@ export const routes: Routes = [
       {
         path:"filter",
         component:FilterComponent
+      },
+      {
+        path:'tap',
+        component:TapComponent
       }
     ]
   },
